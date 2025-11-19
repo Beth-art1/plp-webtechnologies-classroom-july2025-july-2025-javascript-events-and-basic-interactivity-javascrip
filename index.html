@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Web Page Assignment</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <h1>Interactive Web Page</h1>
+</header>
+
+<main>
+    <!-- Section 1: Light/Dark Mode Toggle -->
+    <section id="themeSection">
+        <h2>Theme Toggle</h2>
+        <button id="themeToggleBtn">Toggle Light/Dark Mode</button>
+    </section>
+
+    <!-- Section 2: Counter Button -->
+    <section id="counterSection">
+        <h2>Click Counter</h2>
+        <button id="counterBtn">Click Me</button>
+        <p>Button clicked <span id="count">0</span> times</p>
+    </section>
+
+    <!-- Section 3: Collapsible FAQ -->
+    <section id="faqSection">
+        <h2>FAQ</h2>
+        <div class="faq">
+            <h3 class="faq-question">What is JavaScript?</h3>
+            <p class="faq-answer">JavaScript is a programming language for the web.</p>
+        </div>
+        <div class="faq">
+            <h3 class="faq-question">What is the DOM?</h3>
+            <p class="faq-answer">The DOM is the Document Object Model representing HTML elements.</p>
+        </div>
+    </section>
+
+    <!-- Section 4: Custom Form Validation -->
+    <section id="formSection">
+        <h2>Sign Up Form</h2>
+        <form id="signupForm" novalidate>
+            <label for="name">Name:</label>
+            <input type="text" id="name" placeholder="Your name"><br>
+
+            <label for="email">Email:</label>
+            <input type="text" id="email" placeholder="Your email"><br>
+
+            <label for="password">Password:</label>
+            <input type="password" id="password" placeholder="Password"><br>
+
+            <button type="submit">Submit</button>
+        </form>
+        <div id="formMessage"></div>
+    </section>
+</main>
+
+<script src="script.js"></script>
+</body>
+</html>
